@@ -4,8 +4,8 @@ int main() {
   
   std::cout << "Hello world\n";
 
-  my_func();
-  my_func_inline();
+  MyFunc();
+  MyFuncInline();
   
   return 0;
 }

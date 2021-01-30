@@ -1,9 +1,9 @@
 #ifndef MY_FILE_H
 #define MY_FILE_H
 
-void my_func();
+void MyFunc();
 
-inline void my_func_inline() {
+inline void MyFuncInline() {
   std::cout << "This also works!\n";
 }
 
