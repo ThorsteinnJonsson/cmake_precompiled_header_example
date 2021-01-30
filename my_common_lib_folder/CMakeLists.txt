@@ -41,6 +41,9 @@ target_precompile_headers(my_common_lib PRIVATE
     <thread>
     # Date and time
     <chrono>
+    # You can also add your own headers. Be sure to include only headers that 
+    # stable (i.e. not updated frequently)
+    my_infrequently_update_header.h    
 )
 
 target_include_directories(my_common_lib 
