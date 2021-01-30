@@ -8,4 +8,10 @@ set(CMAKE_CXX_STANDARD 17) # You can use earlier versions for your project if yo
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+add_subdirectory(my_common_lib_folder)
+
 add_executable(cmake_precompiled_header_example main.cpp)
+
+target_link_libraries(cmake_precompiled_header_example 
+  PUBLIC my_common_lib
+)
